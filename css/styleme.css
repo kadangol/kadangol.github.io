@@ -6,7 +6,7 @@ body {
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blue;
+    color: royalblue;
 }
 
 h2 {
@@ -22,4 +22,42 @@ b {
     border-radius: 50%;
     height: 300px;
     width: 300px;
+}
+
+#profileIcon {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.links {
+    text-decoration: none;
+}
+
+body h1::first-letter {
+    color: blue;
+    padding: 0 .3rem;
+    margin: 0 .3rem 0 0;
+    border: 2px solid;
+    border-radius: 8px;
+    font-family: "IBM Plex Mono";
+    font-size: 4rem;
+    line-height: 1;
+}
+
+dl {
+    font-size: 12px;
+}
+
+dl dt {
+    font-weight: bold;
+    color: tomato;
+}
+
+dl dd {
+    font-weight: bold;
 }
