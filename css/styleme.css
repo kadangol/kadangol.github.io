@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    background: rgb(255, 254, 254);
+    background: linear-gradient(90deg, rgba(255, 254, 254, 1) 0%, rgba(218, 218, 218, 1) 63%, rgba(140, 140, 140, 1) 100%);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+}
+
+h2 {
+    color: slateblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+b {
+    color: slateblue;
+}
+
+#profileImg {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
