@@ -1,0 +1,15 @@
+li {
+    display: inline;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+    padding: 10px;
+}
+
+ul {
+    border-color: 1px;
+    background-color: red;
+    text-align: center;
+    padding: 20px;
+}
