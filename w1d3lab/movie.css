@@ -105,6 +105,10 @@ h1 {
     float: left;
 }
 
+.critic-user {
+    margin-top: 10px;
+}
+
 .critic-user img {
     margin-right: 5px;
     float: left;
