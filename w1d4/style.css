@@ -1,0 +1,87 @@
+.content {
+    display: grid;
+    grid-template-rows: 70px 50px 400px 70px;
+}
+
+.flex-menu {
+    display: flex;
+    background-color: #2f4f4f;
+}
+
+.flex-menu>div {
+    background-color: #2f4f4f;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border-right: 2px solid black;
+}
+
+.flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+}
+
+.flex-column1 {
+    background-color: #aaaaaa;
+    width: 50%;
+}
+
+.flex-column2 {
+    background-color: #bbbbbb;
+    width: 100%;
+}
+
+.flex-column3 {
+    background-color: #cccccc;
+    width: 50%;
+}
+
+.header {
+    background-color: #add8e6;
+}
+
+
+/* ------ Header ------ */
+
+.header {
+    background-color: cyan;
+    text-align: center;
+}
+
+.header p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #2f4f4f;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+    .flex-column :nth-child(3) {
+        order: 3;
+    }
+    .flex-column2 {
+        width: 50%;
+    }
+    .flex-column1,
+    .flex-column3 {
+        width: 25%;
+    }
+}
+
+.flex-column :nth-child(2) {
+    order: 3;
+}
