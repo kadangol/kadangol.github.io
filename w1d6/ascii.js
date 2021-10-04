@@ -53,6 +53,7 @@ window.onload = () => {
         clearInterval(interval);
         stop.disabled = true;
         start.disabled = false;
+        animation.disabled = false;
     };
 
     const startAnimation = () => {
@@ -65,6 +66,7 @@ window.onload = () => {
         if (frames !== null && length > 0) {
             stop.disabled = false;
             start.disabled = true;
+            animation.disabled = true;
             startAnimation();
         }
     };
