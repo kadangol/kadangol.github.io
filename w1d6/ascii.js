@@ -58,7 +58,10 @@ window.onload = () => {
 
     const startAnimation = () => {
         clearInterval(interval);
-        interval = setInterval(performAnimation, speed);
+        if (start.disabled == true) {
+            interval = setInterval(performAnimation, speed);
+        }
+
     };
 
 
@@ -78,7 +81,7 @@ window.onload = () => {
         let selectedIndex = animation.options[animation.selectedIndex].value;
 
         let selectedAnimation = ANIMATIONS[selectedIndex];
-        textArea.innerHTML = selectedAnimation.toString().split("=====\n")[0];
+        textArea.innerHTML = selectedAnimation;
 
         if (selectedAnimation !== "") {
             frames = selectedAnimation.toString().split("=====\n");
