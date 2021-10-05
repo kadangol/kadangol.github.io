@@ -1,0 +1,56 @@
+.login {
+    width: 50%;
+    margin: 50px auto;
+    border: 1px solid #c7c7c7;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-input {
+    margin-top: 20px;
+}
+
+label,
+input {
+    width: 95%;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+    margin-top: 10px;
+    border-width: 1px;
+}
+
+input:active {
+    border-color: #e0e0e0;
+}
+
+.checkbox-div {
+    margin-top: 20px;
+}
+
+.checkbox-div input {
+    width: auto;
+}
+
+.submit-btn {
+    width: 110px;
+    height: 45px;
+    background-color: royalblue;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.checkbox-div input,
+.checkbox-div label,
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+span.blur {
+    font-size: 12px;
+    color: #a1a1a1;
+}
