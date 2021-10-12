@@ -24,13 +24,13 @@ class CheckingAccount extends Account {
 
 
     toString() {
-        return super.toString() + ": Overdraft Limit " + this.getOverdraftLimit();
+        return super.toString() + ": Overdraft Limit " + this._overdraftLimit;
 
     };
 
     endOfMonth() {
         if (this._balance < 0) {
-            return "Warning, low balance CheckingAccount " + this._number + ": balance: " + this._balance + " overdraft limit: " + this.getOverdraftLimit();
+            return "Warning!! low balance CheckingAccount " + this._number + ": balance: " + this._balance + " overdraft limit: " + this._overdraftLimit;
         }
         return "";
     };

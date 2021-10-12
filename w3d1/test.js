@@ -167,7 +167,7 @@ describe("Bank", function() {
 
 
 describe("Bank: endOfMonth", function() {
-    it("Returns output of endOfMonth() function from all the objects",
+    it("Output: Returns output of endOfMonth() function from all the objects",
         function() {
             let bank = new Bank();
             bank.addAccount();
@@ -177,7 +177,7 @@ describe("Bank: endOfMonth", function() {
 
             bank.addCheckingAccount(5000);
             bank.accounts[bank.accounts.length - 1].withdraw(2000);
-            assert.equal("\nInterest added SavingsAccount 9: balance 110 interest: 10\nWarning, low balance CheckingAccount 10: balance: -2000 overdraft limit: 5000",
+            assert.equal("\nInterest added SavingsAccount 9: balance 110 interest: 10\nWarning!! low balance CheckingAccount 10: balance: -2000 overdraft limit: 5000",
                 bank.endOfMonth());
         });
 });
