@@ -1,0 +1,47 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background: rgb(255, 254, 254);
+    background: linear-gradient(90deg, rgba(255, 254, 254, 1) 0%, rgba(218, 218, 218, 1) 63%, rgba(140, 140, 140, 1) 100%);
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+}
+
+.input-group {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    background-color: transparent;
+    width: 150px;
+}
+
+.form-item {
+    margin: 15px 10px;
+    font-size: 16px;
+    font-family: Serif, serif;
+}
+
+.form-item span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-item input {
+    width: 100%;
+}
+
+.form-item button {
+    height: 40px;
+    width: 100px;
+    background-color: lightgray;
+}

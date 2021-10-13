@@ -27,3 +27,34 @@ class SavingsAccount extends Account {
     }
 
 }
+
+
+
+class Computer {
+    constructor(ram, cpu, storage) {
+        this._ram = ram;
+        this._cpu = cpu;
+        this._storage = storage;
+    }
+
+    runProgram(program) {
+        console.log("running: " + program);
+    }
+}
+
+
+class Laptop extends Computer {
+    constructor(ram, cpu, storage, battery) {
+        super(ram, cpu, storage);
+        this._battery = battery;
+    }
+
+    carryAround() {
+        console.log("Carrying laptop:  cpu: " + this._cpu + " ram: " + this._ram + " storage: " + this._storage + " battery: " + this._battery);
+    }
+}
+
+
+var l = new Laptop("16GB", "Intel", '512 SSD', "4cell");
+l.carryAround();
+l.runProgram('MS');
