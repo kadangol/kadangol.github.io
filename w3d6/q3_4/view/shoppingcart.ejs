@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+</head>
+
+<body>
+    <div>
+        <% for (let i=0;i<shoppingCart.length;i++) {%>
+            <div>
+                <div>Product Name:
+                    <%= shoppingCart[i].name %>
+                </div>
+
+                <div>Product Price: $
+                    <%= shoppingCart[i].price %>
+                </div>
+
+
+                <div>Product Price: $
+                    <%= shoppingCart[i].quantity %>
+                </div>
+                <hr/>
+            </div>
+            <%} %>
+    </div>
+    <div>
+        <a href="/">back</a>
+    </div>
+</body>
+
+</html>
