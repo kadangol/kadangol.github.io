@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add cookie</title>
+</head>
+
+<body>
+    <form action="/addCookie" method="post">
+        <label>Key: <input name="key" type="text"></label>
+        <label>Value: <input name="value" type="text"></label>
+        <button type="submit">Add Cookie</button>
+    </form>
+    <h1> My Cookies Lists</h1>
+    <table style="border: 2px solid;">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (key in cookies) { %>
+                <tr>
+                    <td>
+                        <%= key %>
+                    </td>
+                    <td>
+                        <%= cookies[key] %>
+                    </td>
+                    <% } %>
+                </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
